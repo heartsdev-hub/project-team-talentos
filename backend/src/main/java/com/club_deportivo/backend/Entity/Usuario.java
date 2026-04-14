@@ -1,6 +1,7 @@
 package com.club_deportivo.backend.Entity;
 
 import jakarta.persistence.*;
+import lombok.Builder;
 
 import java.time.LocalDateTime;
 import java.util.UUID;
@@ -14,6 +15,7 @@ import java.util.UUID;
                 )
         }
 )
+@Builder
 public class Usuario {
     @Id
     @GeneratedValue(strategy = GenerationType.UUID)
