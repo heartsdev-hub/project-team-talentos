@@ -1,5 +1,6 @@
 package com.club_deportivo.backend.Mapper;
 
+import com.club_deportivo.backend.DTO.UsuarioDTO.UsuarioCreateDTO;
 import com.club_deportivo.backend.DTO.UsuarioDTO.UsuarioResponseDTO;
 import com.club_deportivo.backend.Entity.Usuario;
 import org.modelmapper.ModelMapper;
@@ -16,7 +17,7 @@ public class ModelMapperConfig {
         modelMapper.getConfiguration().setMatchingStrategy(MatchingStrategies.STRICT);
 
         modelMapper.createTypeMap(Usuario.class, UsuarioResponseDTO.class);
-        modelMapper.createTypeMap(UsuarioResponseDTO.class, Usuario.class);
+        modelMapper.createTypeMap(UsuarioCreateDTO.class, Usuario.class);
         return modelMapper;
     }
 }

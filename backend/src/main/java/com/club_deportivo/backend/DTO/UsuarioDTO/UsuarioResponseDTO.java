@@ -18,6 +18,9 @@ public class UsuarioResponseDTO {
     private LocalDateTime createdAt;
     private LocalDateTime updatedAt;
 
+    public UsuarioResponseDTO() {
+    }
+
     public UUID getId() {
         return id;
     }
